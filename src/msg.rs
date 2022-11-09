@@ -8,7 +8,7 @@ pub struct InstantiateMsg {
 #[cw_serde]
 pub enum ExecuteMsg {
     // Increment {},
-    Reset { count: i32 },
+    Reset { count: Option<i32> },
     // Decrement {},
     Increment { amount: Option<i32> },
     Decrement { amount: Option<i32> },
